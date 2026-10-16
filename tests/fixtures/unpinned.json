@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-fetch"],
+      "env": {}
+    },
+    "mystery": {
+      "command": "totally-legit-tool",
+      "args": [],
+      "env": {}
+    }
+  }
+}

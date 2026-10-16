@@ -1,0 +1,7 @@
+{
+  "solo": {
+    "command": "/opt/mcp/solo",
+    "args": [],
+    "env": {}
+  }
+}

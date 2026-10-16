@@ -1,0 +1,10 @@
+require_allowlist: true
+allow_servers:
+  - filesystem
+deny_servers:
+  - evil-server
+deny_env_patterns:
+  - ".*KEY.*"
+  - ".*TOKEN.*"
+deny_commands:
+  - "sh -c"

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "runner": {
+      "command": "sh",
+      "args": ["-c", "node /opt/mcp/servers/runner/index.js"],
+      "env": {}
+    }
+  }
+}

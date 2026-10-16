@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "/usr/bin/node",
+      "args": ["/opt/mcp/servers/filesystem/dist/index.js", "/data"],
+      "env": {}
+    },
+    "notes": {
+      "command": "/usr/local/bin/python3",
+      "args": ["/opt/mcp/servers/notes/server.py", "--dir", "/data/notes"],
+      "env": {"NOTES_FORMAT": "markdown"}
+    }
+  }
+}
