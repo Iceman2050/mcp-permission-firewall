@@ -97,6 +97,33 @@ For teams that want this as a managed control plane — allow/deny policies, app
 
 MIT — see [LICENSE](LICENSE). Copyright Ingenious AI.
 
+## How to read a result
+
+Findings are reported per server with a severity (high / medium / low):
+
+- A **finding** is a *confirmed* instance of a documented risky pattern in
+  the config file as written — the exact line is shown.
+- **No findings** means *not detected by these checks*: the audit is
+  heuristic and name-based. A clean audit is **not** a proof that a config
+  is safe, and says nothing about what a server does at runtime.
+- If a config cannot be parsed, the tool says so — treat that as
+  *inconclusive*, never as a pass.
+
+## Go further — the hosted control plane
+
+This free tool audits one config at a time, by hand. The recurring problem —
+many agents, many configs, policies that must hold continuously — is what
+the hosted side is for: [Agent Auth Gateway](https://authgateway.getingeniousai.com)
+and TrustGate provide allow/deny policies, approval queues, spend caps and
+kill switches for AI agents in production. The checker stays fully useful
+on its own; the platform manages the ongoing operational problem.
+
+## Project status
+
+Maintained by **Ingenious AI** · License: MIT (see [LICENSE](LICENSE)) ·
+Last validated: 2026-11-10 · Security policy: [SECURITY.md](SECURITY.md) ·
+Contributions: [CONTRIBUTING.md](CONTRIBUTING.md)
+
 ## Built by Ingenious AI
 
 This project is part of the **Ingenious AI** platform suite — defensive security tooling for the AI era. Our platforms are currently in early access (full launch Nov 1) — request access to any of them on WhatsApp:
